@@ -1,7 +1,12 @@
-li {
+.navLinks {
+  font-size: 85%;
   display: inline-block;
   margin: 5px;
   color: white;
+  transition: all 0.5s ease;
+}
+.navLinks:hover{
+  font-size: 100%;
 }
 
 .header {
@@ -9,6 +14,10 @@ li {
 }
 
 .nav{
-  width: 40%;
+  width: 45%;
   margin: 3% 0px 0px 50%;
+}
+
+.listBox {
+ background-color: blue;
 }
