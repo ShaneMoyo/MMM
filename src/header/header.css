@@ -1,0 +1,14 @@
+li {
+  display: inline-block;
+  margin: 5px;
+  color: white;
+}
+
+.header {
+  border: solid;
+}
+
+.nav{
+  width: 40%;
+  margin: 3% 0px 0px 50%;
+}
