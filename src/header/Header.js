@@ -19,6 +19,7 @@ export default class Header extends Component {
         <li>Mineral List Item 1</li>
         <li>Mineral List Item 2</li>
         <li>Mineral List Item 3</li>
+        <li>Mineral List Item 5</li>
       </ul>;
     const movementList = 
     <ul className="listBox">
