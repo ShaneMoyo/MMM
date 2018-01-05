@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { Box } from 'bloomer';
+import { Box, Content } from 'bloomer';
 
 class Home extends Component { 
   render(){
     return(
-      <div> 
-        <Box>Home Box</Box>
+      <div>
+        <Content isSize="large" style={{ backgroundColor: 'red', backgroundImage: 'url("http://brandmark.io/logo-rank/random/beats.png")' }}>
+          <Box>Home Box</Box>
+        </Content>
       </div>
     );
   }

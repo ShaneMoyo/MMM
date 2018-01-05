@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Form from '../form/Form';
+import Card from '../card/Card';
 import { 
   Box,
   Hero,
@@ -33,8 +35,8 @@ class Massage extends Component {
 
     const tabViews = { 
       tab1: (<Box>tab 1</Box>),
-      tab2: (<Box>tab 2</Box>),
-      tab3: (<Box>tab 3</Box>)
+      tab2: (<Box><Form/></Box>),
+      tab3: (<Box>tab 3<Card/></Box>)
     };
   
     return(
