@@ -32,7 +32,7 @@ class Navigation extends Component {
         <Navbar style={{ margin: '0' }} isTransparent="true">
           <NavbarBrand>
             <NavbarItem>
-              <img src="http://brandmark.io/logo-rank/random/beats.png" style={{ marginRight: 5 }} /> Bloomer
+              <img src="http://brandmark.io/logo-rank/random/beats.png" style={{ marginRight: 5 }} /> HealthiHost
             </NavbarItem>
             <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav}/>
           </NavbarBrand>
