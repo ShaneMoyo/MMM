@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navigation from '../navigation/Navigation';
 import { 
   Box,
   Hero,
@@ -42,6 +43,7 @@ class Minerals extends Component {
     return(
       <div> 
         <Hero isColor='info' isSize='medium'>
+          <Navigation/>
           <HeroBody>
             <Container hasTextAlign='centered'>
               <Title>Mineral Page Info</Title>

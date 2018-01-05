@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from '../form/Form';
 import Card from '../card/Card';
+import Navigation from '../navigation/Navigation';
 import { 
   Box,
   Hero,
@@ -42,6 +43,7 @@ class Massage extends Component {
     return(
       <div> 
         <Hero isColor='info' isSize='medium'>
+          <Navigation/>
           <HeroBody>
             <Container hasTextAlign='centered'>
               <Title>Massage Page Info</Title>

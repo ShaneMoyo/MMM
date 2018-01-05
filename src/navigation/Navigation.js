@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { 
-  NavbarItem,  
-  NavbarDropdown, 
-  NavbarStart,
-  NavbarMenu,
-  NavbarBurger,
-  NavbarBrand,
-  Navbar,
-  NavbarEnd,
-} from 'bloomer';
+import '../style/mystyle.css';
+
 
 const NavBarLink = props => <NavLink {...props} 
 className="nav-link" 
@@ -28,33 +20,40 @@ class Navigation extends Component {
 
   render() {
     return (
-    <div>
-        <Navbar style={{ margin: '0' }} isTransparent="true">
-          <NavbarBrand>
-            <NavbarItem>
-              <img src="http://brandmark.io/logo-rank/random/beats.png" style={{ marginRight: 5 }} /> HealthiHost
-            </NavbarItem>
-            <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav}/>
-          </NavbarBrand>
-          <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
-            <NavbarStart>
+      <div class="hero-head">
+      <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <NavBarLink exact to="/">HealthiHost</NavBarLink>
+          </a>
 
-                <NavbarDropdown>
-                  <NavbarItem href='#/d'><NavBarLink exact to="/">Home</NavBarLink></NavbarItem>
-                  <NavbarItem href='#/d'><NavBarLink exact to="/massage">Massage</NavBarLink></NavbarItem>
-                  <NavbarItem href='#/d'><NavBarLink exact to="/minerals">Minerals</NavBarLink></NavbarItem>
-                  <NavbarItem href='#/d'><NavBarLink exact to="/movement">Movement</NavBarLink></NavbarItem>
-                </NavbarDropdown>  
+          <span class="navbar-burger burger" data-target="navbarMenu" onClick={() => this.onClickNav()}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
 
-            </NavbarStart>
-          </NavbarMenu>
-        </Navbar>
-    </div>
+        <div id="navbarMenu" class={ this.state.isActive ? "navbar-menu is-active" : "navbar-menu"}>
+          <div class="navbar-end">
+            <a class="navbar-item">
+              <NavBarLink exact to="/massage">Massage</NavBarLink>
+            </a>
+            <a class="navbar-item">
+              <NavBarLink exact to="/minerals">Minerals</NavBarLink>
+            </a>
+            <a class="navbar-item">
+            <NavBarLink exact to="/movement">Movement</NavBarLink>
+            </a>
+          </div>
+        </div>
+
+      </div>
+     </nav>
+     </div>
     );
   }
 }
-
-
-
 
 export default Navigation;
