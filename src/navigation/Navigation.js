@@ -21,7 +21,7 @@ class Navigation extends Component {
   render() {
     return (
       <div class="hero-head">
-      <nav class="navbar">
+      <nav class="navbar is-transparent" >
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
@@ -35,9 +35,9 @@ class Navigation extends Component {
           </span>
         </div>
 
-        <div id="navbarMenu" class={ this.state.isActive ? "navbar-menu is-active" : "navbar-menu"}>
+        <div class={ this.state.isActive ? "navbar-menu is-active" : "navbar-menu"}>
           <div class="navbar-end">
-            <a class="navbar-item">
+            <a class="navbar-item is-transparent">
               <NavBarLink exact to="/massage">Massage</NavBarLink>
             </a>
             <a class="navbar-item">

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Form from '../form/Form';
 import Card from '../card/Card';
 import Navigation from '../navigation/Navigation';
+import Promo from '../article/Promo';
+import Article from '../article/Article';
+import Login from '../auth/Login';
 import { 
   Box,
   Hero,
@@ -35,9 +38,9 @@ class Massage extends Component {
     let tabView;
 
     const tabViews = { 
-      tab1: (<Box>tab 1</Box>),
+      tab1: (<Box><Promo/><Article/><Promo/><Article/><Promo/><Promo/><Article/></Box>),
       tab2: (<Box><Form/></Box>),
-      tab3: (<Box>tab 3<Card/></Box>)
+      tab3: (<Box><Card/><Card/></Box>)
     };
   
     return(
@@ -46,16 +49,16 @@ class Massage extends Component {
           <Navigation/>
           <HeroBody>
             <Container hasTextAlign='centered'>
-              <Title>Massage Page Info</Title>
+              <Title>Massage Therapy</Title>
             </Container>
           </HeroBody>
           <HeroFooter>
             <Tabs isBoxed isFullWidth>
               <Container>
                 <TabList>
-                    <Tab isActive={'tab1' === this.state.active } onClick={() => this.onClickTab('tab1')}><TabLink>Tab 1</TabLink></Tab>
-                    <Tab isActive={'tab2' === this.state.active } onClick={() => this.onClickTab('tab2')}><TabLink>Tab 2</TabLink></Tab>
-                    <Tab isActive={'tab3' === this.state.active } onClick={() => this.onClickTab('tab3')}><TabLink>tab 3</TabLink></Tab>
+                    <Tab isActive={'tab1' === this.state.active } onClick={() => this.onClickTab('tab1')}><TabLink>Overview</TabLink></Tab>
+                    <Tab isActive={'tab2' === this.state.active } onClick={() => this.onClickTab('tab2')}><TabLink>Book Appointment</TabLink></Tab>
+                    <Tab isActive={'tab3' === this.state.active } onClick={() => this.onClickTab('tab3')}><TabLink>About</TabLink></Tab>
                 </TabList>
               </Container>
             </Tabs>

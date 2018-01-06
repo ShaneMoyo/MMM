@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../navigation/Navigation';
+import Login from '../auth/Login';
 import { 
   Box,
   Hero,
@@ -34,7 +35,7 @@ class Minerals extends Component {
 
     const tabViews = { 
       tab1: (<Box>tab 1</Box>),
-      tab2: (<Box>tab 2</Box>),
+      tab2: (<Box><Login/></Box>),
       tab3: (<Box>tab 3</Box>)
     };
 

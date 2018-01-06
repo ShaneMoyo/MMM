@@ -20,18 +20,6 @@ export default class Landing extends Component {
                   <h2 class="subtitle">
                     Welcome to Healthihost. blah blah blah 
                   </h2>
-                  <div class="box">
-                  <div class="field is-grouped">
-                    <p class="control is-expanded">
-                      <input class="input" type="text" placeholder="Enter your email"/>
-                    </p>
-                    <p class="control">
-                      <a class="button is-info">
-                        Notify Me
-                      </a>
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
